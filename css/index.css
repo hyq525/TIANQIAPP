@@ -1,0 +1,248 @@
+body{
+	background-color: #f2f2f2;
+	font-size: .12rem;
+}
+#now{
+	width: 100%;
+	height: 13.8rem;
+	background-image: url('../img/screen.png'),linear-gradient(#3bbcff,#46e7ff);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: bottom center;
+}
+.now_city{
+	
+	font-size: 0.36rem;
+	color: #fff;
+	text-align: center;
+	line-height: 1.57rem;
+}
+.now_air{
+	width: 2.1rem;
+	height: 1.26rem;
+	background-color: #f1ab62;
+	margin-left: 0.26rem;
+	margin-top: 0.05rem;
+	border-radius: 0.3rem;
+	padding-top: 0.31rem;
+
+}
+.now_air h1,h2{
+	font-size: 0.2rem;
+	text-align: center;
+	line-height: 0.45rem;
+	color: #fff;
+}
+.now_temp{
+	font-size: 0.96rem;
+	text-align: center;
+	color: #fff;
+	padding-top: 0.77rem;
+	padding-bottom: 0.77rem;
+}
+.now_weather{
+	font-size: 0.51rem;
+	line-height:0.51rem; 
+	text-align: center;
+	color: #fff;
+	padding-top: 0.9rem;
+}
+.now_windbox{
+	font-size: 0.32rem;
+	line-height: 0.32rem;
+	text-align: center;
+	color: #fff;
+	padding-top: 0.54rem;
+}
+.tishiyu{	
+	font-size: 0.32rem;
+	text-align: center;
+	color: #fff;
+	padding-top: 1.48rem;
+	line-height: 0.32rem;
+}
+#future{
+	width: 100%;
+	height: 3.09rem;
+	background-color: #fff;
+	border-bottom: 0.03rem solid #e4e4e4;
+	padding: .72rem .58rem;
+}
+.feature_box{
+	width: 50%;
+	height: 100%;
+	float: left;
+	padding: 0 .58rem;
+}
+.today{
+	border-right: 0.03rem solid #e4e4e4;
+}
+
+
+.future_top{
+	font-size: .32rem;
+	width: 100%;
+	height: 50%;
+}
+.future_date{
+	float: left;
+}
+.future_top p{
+	float: right;
+}
+.today_weather{
+	float: left;
+}
+.today_img{
+	width: .72rem;
+	height: .72rem;
+	float: right;
+
+}
+.tomorrow_weather{
+	float: left;
+}
+.tomorrow_img{
+	width: .72rem;
+	height: .72rem;
+	float: right;
+}
+#hours{
+	width: 100%;
+	height: 3.9rem;
+	border-top: 0.03rem solid #e4e4e4;
+	border-bottom: 0.03rem solid #e4e4e4;
+	background-color: #fff;
+	margin-top: 0.3rem;
+	display: flex;
+	flex-shrink: 0;
+	overflow-x: scroll;
+}
+#hours li{
+	width: 2rem;
+	height: 100%;
+/* 	background-color: red; */
+	padding: .94rem 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: space-between;
+
+
+}
+.hours_img{
+	width: 1rem;
+	height: 1rem;
+	padding: 0 0.5rem;
+	box-sizing: content-box;
+}
+.hours_time{
+	font-size: .26rem;
+	color: black; 
+}
+.hours_temp{
+	color: black; 
+	font-size: .26rem;
+}
+#week{
+	width: 100%;
+	height: 11.19rem;
+	border-top: 0.03rem solid #e4e4e4;
+	border-bottom: 0.03rem solid #e4e4e4;
+	background-color: #fff;
+	margin-top: 0.3rem;
+	display: flex;
+	flex-shrink: 0;
+	overflow-x: scroll;
+}
+#week li{
+	width: 2rem;
+	height: 100%;
+	/* background-color: red; */
+	padding: .94rem 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: space-between;
+
+}
+.week_maxtemp,.week_mintemp,.week_wind{
+	text-align: center;
+	width: 2rem;
+/* 	height: 1rem; */
+
+}
+.week_img{
+	width: 1.3rem;
+	height: 1.3rem;
+}
+#hours::-webkit-scrollbar{
+	display: none;
+}
+#week::-webkit-scrollbar{
+	display: none;
+}
+#citys{
+	height: 100vh;
+	width: 100%;
+	background-color: red;
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 999;
+	margin: auto;
+}
+header{
+	width: 100%;
+	height: 1.29rem;
+	background-color: white;
+	padding: 0 .29rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	color: #76a9ff;
+	font-size: .42rem;
+}
+.sousuo{
+	width: 9.03rem;
+	height: .87rem;
+	background-color: #e2e2e2;
+	border-radius: .2rem;
+	border: 0;
+}
+.citys_name{
+	height: 100vh;
+	width: 100%;
+	background-color: #f6f6f6;
+
+}
+.citys_title{
+	font-size: .46rem;
+	color: #999;
+	padding: 0 .29rem;
+	padding-top: .35rem;
+
+}
+.citys_names{
+	width: 100%;
+	padding-top: .2rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: start;
+	align-content: space-between;
+}
+.citys_name1{
+	width: 2.34rem;
+	height: .84rem;
+	border: .03rem solid #e0e0e0;
+	border-radius: .2rem;
+	background-color: #fff;
+	text-align: center;
+	font-size: .38rem;
+	line-height: .78rem;
+	margin-left: .29rem;
+	margin-right:  .29rem;
+	margin-bottom: .40rem;
+}
