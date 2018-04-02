@@ -2,69 +2,58 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0">
 	<title>天气APP</title>
-	<link rel="stylesheet" href="css/index.css">
-	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/pubilc.css">
+	<link rel="stylesheet" href="css/nima.css">
 	<script src="js/rem.js"></script>
 	<link rel="icon" href="img/logo.ico" type="image/x-icon">
-	<meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 <body>
 	<!-- 当前信息 -->
 	<section id="now">
 		<!-- 当前城市 -->
 		<h1 class="now_city">
-			<i>&lt;</i>
-			<span>太原</span>
+			<span class="city_icon">&gt;</span>
+			<span class="now_city_name"></span>
 		</h1>
-		<!-- 当前空气质量 -->
 		<div class="now_air">
 			<h1>空气</h1>
-			<h2>良</h2>
+			<h1></h1>
 		</div>
-		<!-- 当前温度 -->
-		<h2 class="now_temp"><span>-3</span>°</h2>
-		<!-- 当前天气 -->
-		<h2 class="now_weather">晴</h2>
-		<!-- 当前风力 -->
-		<div class="now_windbox">
-			<span class="now_wind">北风</span> 
-			<span class="now_windlv">3级</span>
-		</div>
-
-		<h2 class="tishiyu">天气冷了，注意保暖~</h2>
+		<h1 class="now_temp">
+			<span>-3</span>°
+		</h1>
+		<h2>
+			<p class="smtian">晴</p>
+		</h2>
+		<h3><em class="now_wind">北风</em><em class="now_wind_level">3</em></h3>
+		<p id="now_to_user">天气冷了，注意保暖~</p>
 	</section>
-	<!-- 未来两天天气 -->
+	<!-- 未来两天的天气信息 -->
 	<section id="future">
-		<div class="feature_box today">
+		<div class="future_box today">
 			<div class="future_top">
 				<span class="future_date">今天</span>
-				<p>
-					<span class="today_higtemp">4</span>
-					<span>/</span>
-					<span class="today_lowtemp">-10</span>
-					<span>°c</span>
-				</p>
+				<p><span class="today_hight_tmp">5</span>/<span class="todaylow_tmp">-7</span>°</p>
 			</div>
 			<div class="future_top">
 				<span class="today_weather">多云</span>
-				<div class="today_img"><img src="img/1.png" alt=""></div>
+				<div class="today_img">
+					<!--<img src="img/1.png" alt="">-->
+				</div>
 			</div>
 		</div>
-
-		<div class="feature_box tomorrow">
+		<div class="future_box mingtian">
 			<div class="future_top">
 				<span class="future_date">明天</span>
-				<p>
-					<span class="tomorrow_higtemp">5</span>
-					<span>/</span>
-					<span class="tomorrow_lowtemp">-7</span>
-					<span>°c</span>
-				</p>
+				<p><span class="mingtianhighttmp">4</span>/<span class="mingtianlowtmp">-10</span>°</p>
 			</div>
 			<div class="future_top">
-				<span class="tomorrow_weather">多云</span>
-				<div class="tomorrow_img"><img src="img/1.png" alt=""></div>
+				<span class="mingtian_weather">多云</span>
+				<div class="mingtian_img">
+					<!--<img src="img/1.png" alt="">-->
+				</div>
 			</div>
 		</div>
 	</section>
@@ -72,178 +61,380 @@
 	<ul id="hours">
 		<li>
 			<h1 class="hours_time">8:00</h1>
-			<div class="hours_img"><img src="img/0.png" alt=""></div>
-			<h2 class="hours_temp"><span>-8</span>°C</h2>
+			<div class="hours_img"><img src="img/2.png" alt=""></div>
+			<h4 class="hours_tmp"><span>-8</span>°</h4>
 		</li>
 		<li>
-			<h1 class="hours_time">9:00</h1>
-			<div class="hours_img"><img src="img/0.png" alt=""></div>
-			<h2 class="hours_temp"><span>-1</span>°C</h2>
+			<h1 class="hours_time">8:00</h1>
+			<div class="hours_img"><img src="img/2.png" alt=""></div>
+			<h4 class="hours_tmp"><span>-8</span>°</h4>
 		</li>
 		<li>
-			<h1 class="hours_time">10:00</h1>
-			<div class="hours_img"><img src="img/0.png" alt=""></div>
-			<h2 class="hours_temp"><span>0</span>°C</h2>
+			<h1 class="hours_time">8:00</h1>
+			<div class="hours_img"><img src="img/2.png" alt=""></div>
+			<h4 class="hours_tmp"><span>-8</span>°</h4>
 		</li>
 		<li>
-			<h1 class="hours_time">11:00</h1>
-			<div class="hours_img"><img src="img/0.png" alt=""></div>
-			<h2 class="hours_temp"><span>1</span>°C</h2>
+			<h1 class="hours_time">8:00</h1>
+			<div class="hours_img"><img src="img/2.png" alt=""></div>
+			<h4 class="hours_tmp"><span>-8</span>°</h4>
 		</li>
 		<li>
-			<h1 class="hours_time">12:00</h1>
-			<div class="hours_img"><img src="img/0.png" alt=""></div>
-			<h2 class="hours_temp"><span>-8</span>°C</h2>
+			<h1 class="hours_time">8:00</h1>
+			<div class="hours_img"><img src="img/2.png" alt=""></div>
+			<h4 class="hours_tmp"><span>-8</span>°</h4>
 		</li>
 		<li>
-			<h1 class="hours_time">13:00</h1>
-			<div class="hours_img"><img src="img/0.png" alt=""></div>
-			<h2 class="hours_temp"><span>-8</span>°C</h2>
+			<h1 class="hours_time">8:00</h1>
+			<div class="hours_img"><img src="img/2.png" alt=""></div>
+			<h4 class="hours_tmp"><span>-8</span>°</h4>
 		</li>
 		<li>
-			<h1 class="hours_time">14:00</h1>
-			<div class="hours_img"><img src="img/0.png" alt=""></div>
-			<h2 class="hours_temp"><span>-8</span>°C</h2>
+			<h1 class="hours_time">8:00</h1>
+			<div class="hours_img"><img src="img/2.png" alt=""></div>
+			<h4 class="hours_tmp"><span>-8</span>°</h4>
+		</li>
+		<li>
+			<h1 class="hours_time">8:00</h1>
+			<div class="hours_img"><img src="img/2.png" alt=""></div>
+			<h4 class="hours_tmp"><span>-8</span>°</h4>
 		</li>
 	</ul>
-	<!-- 未来几天天气 -->
-	<ul id="week">
+	<!-- 未来几天的信息 -->
+	<ul id="date">
 		<li>
-			<h1 class="week_date"><span>02</span>/<span>06</span></h1>
-			<h5 class="week_weather">多云转晴</h5>
-			<div class="week_img"><img src="img/0.png" alt=""></div>
-			<div class="week_maxtemp">4</div>
-			<div class="week_mintemp">-14</div>
-			<div class="week_wind">西北风</div>
-			<div class="week_windlv">
-				<span>3</span>
-				级
-			</div>
+			<h1 class="date_every">02/06</h1>
+			<div class="date_weather"><h1><span>多云转晴</span></h1></div>
+			<div class="date_img"><img src="img/4.png" alt=""></div>
+			<div class="date_hightmp"><h1><span>4</span></h1></div>
+			<div class="date_lowtmp"><h1><span>-14</span></h1></div>
+			<div class="date_wind"><h1><span>西北风</span></h1></div>
+			<div class="date_wind_level"><h1><span>3</span></h1></div>
 		</li>
 		<li>
-			<h1 class="week_date"><span>02</span>/<span>06</span></h1>
-			<h5 class="week_weather">多云转晴</h5>
-			<div class="week_img"><img src="img/0.png" alt=""></div>
-			<div class="week_maxtemp">4</div>
-			<div class="week_mintemp">-14</div>
-			<div class="week_wind">西北风</div>
-			<div class="week_windlv">
-				<span>3</span>
-				级
-			</div>
-		</li>
-		<li>
-			<h1 class="week_date"><span>02</span>/<span>06</span></h1>
-			<h5 class="week_weather">多云转晴</h5>
-			<div class="week_img"><img src="img/0.png" alt=""></div>
-			<div class="week_maxtemp">4</div>
-			<div class="week_mintemp">-14</div>
-			<div class="week_wind">西北风</div>
-			<div class="week_windlv">
-				<span>3</span>
-				级
-			</div>
-		</li>
-		<li>
-			<h1 class="week_date"><span>02</span>/<span>06</span></h1>
-			<h5 class="week_weather">多云转晴</h5>
-			<div class="week_img"><img src="img/0.png" alt=""></div>
-			<div class="week_maxtemp">4</div>
-			<div class="week_mintemp">-14</div>
-			<div class="week_wind">西北风</div>
-			<div class="week_windlv">
-				<span>3</span>
-				级
-			</div>
-		</li>
-		<li>
-			<h1 class="week_date"><span>02</span>/<span>06</span></h1>
-			<h5 class="week_weather">多云转晴</h5>
-			<div class="week_img"><img src="img/0.png" alt=""></div>
-			<div class="week_maxtemp">4</div>
-			<div class="week_mintemp">-14</div>
-			<div class="week_wind">西北风</div>
-			<div class="week_windlv">
-				<span>3-4</span>
-				级
-			</div>
-		</li>
-		<li>
-			<h1 class="week_date"><span>02</span>/<span>06</span></h1>
-			<h5 class="week_weather">多云转晴</h5>
-			<div class="week_img"><img src="img/0.png" alt=""></div>
-			<div class="week_maxtemp">4</div>
-			<div class="week_mintemp">-14</div>
-			<div class="week_wind">西北风</div>
-			<div class="week_windlv">
-				<span>3</span>
-				级
-			</div>
-		</li>
-		<li>
-			<h1 class="week_date"><span>02</span>/<span>06</span></h1>
-			<h5 class="week_weather">多云转晴</h5>
-			<div class="week_img"><img src="img/0.png" alt=""></div>
-			<div class="week_maxtemp">4</div>
-			<div class="week_mintemp">-14</div>
-			<div class="week_wind">西北风</div>
-			<div class="week_windlv">
-				<span>3</span>
-				级
-			</div>
+			<h1 class="date_every">02/06</h1>
+			<div class="date_weather"><h1><span>多云转晴</span></h1></div>
+			<div class="date_img"><img src="img/4.png" alt=""></div>
+			<div class="date_hightmp"><h1><span>4</span></h1></div>
+			<div class="date_lowtmp"><h1><span>-14</span></h1></div>
+			<div class="date_wind"><h1><span>西北风</span></h1></div>
+			<div class="date_wind_level"><h1><span>3</span></h1></div>
+		</li><li>
+			<h1 class="date_every">02/06</h1>
+			<div class="date_weather"><h1><span>多云转晴</span></h1></div>
+			<div class="date_img"><img src="img/4.png" alt=""></div>
+			<div class="date_hightmp"><h1><span>4</span></h1></div>
+			<div class="date_lowtmp"><h1><span>-14</span></h1></div>
+			<div class="date_wind"><h1><span>西北风</span></h1></div>
+			<div class="date_wind_level"><h1><span>3</span></h1></div>
+		</li><li>
+			<h1 class="date_every">02/06</h1>
+			<div class="date_weather"><h1><span>多云转晴</span></h1></div>
+			<div class="date_img"><img src="img/4.png" alt=""></div>
+			<div class="date_hightmp"><h1><span>4</span></h1></div>
+			<div class="date_lowtmp"><h1><span>-14</span></h1></div>
+			<div class="date_wind"><h1><span>西北风</span></h1></div>
+			<div class="date_wind_level"><h1><span>3</span></h1></div>
+		</li><li>
+			<h1 class="date_every">02/06</h1>
+			<div class="date_weather"><h1><span>多云转晴</span></h1></div>
+			<div class="date_img"><img src="img/4.png" alt=""></div>
+			<div class="date_hightmp"><h1><span>4</span></h1></div>
+			<div class="date_lowtmp"><h1><span>-14</span></h1></div>
+			<div class="date_wind"><h1><span>西北风</span></h1></div>
+			<div class="date_wind_level"><h1><span>3</span></h1></div>
+		</li><li>
+			<h1 class="date_every">02/06</h1>
+			<div class="date_weather"><h1><span>多云转晴</span></h1></div>
+			<div class="date_img"><img src="img/4.png" alt=""></div>
+			<div class="date_hightmp"><h1><span>4</span></h1></div>
+			<div class="date_lowtmp"><h1><span>-14</span></h1></div>
+			<div class="date_wind"><h1><span>西北风</span></h1></div>
+			<div class="date_wind_level"><h1><span>3</span></h1></div>
+		</li><li>
+			<h1 class="date_every">02/06</h1>
+			<div class="date_weather"><h1><span>多云转晴</span></h1></div>
+			<div class="date_img"><img src="img/4.png" alt=""></div>
+			<div class="date_hightmp"><h1><span>4</span></h1></div>
+			<div class="date_lowtmp"><h1><span>-14</span></h1></div>
+			<div class="date_wind"><h1><span>西北风</span></h1></div>
+			<div class="date_wind_level"><h1><span>3</span></h1></div>
 		</li>
 	</ul>
 	<main id="citys">
 		<header>
-			<input type="text" class="sousuo" placeholder="请输入区域">
-			<span class="btn">取消</span>
+			<input type="text" class="serach" placeholder="请输入搜索内容">
+			<h1 class="bth">取消</h1>
 		</header>
-		<ul class="citys_name">
-			<h1 class="citys_title">热门城市</h1>
-			<div class="citys_names">
-				<li class="citys_name1">太原</li>
-				<li class="citys_name1">北京</li>
-				<li class="citys_name1">上海</li>
-				<li class="citys_name1">四川</li>
-				<li class="citys_name1">杭州</li>
-				<li class="citys_name1">西安</li>
-			</div>
-			<h1 class="citys_title">贵州</h1>
-			<div class="citys_names">
-				<li class="citys_name1">仁怀</li>
-				<li class="citys_name1">安顺</li>
-				<li class="citys_name1">福泉</li>
-				<li class="citys_name1">清镇</li>
-				<li class="citys_name1">铜仁</li>
-				<li class="citys_name1">贵阳</li>
-				<li class="citys_name1">凯里</li>
-				<li class="citys_name1">遵义</li>
-				<li class="citys_name1">都匀</li>
-				<li class="citys_name1">兴义</li>
-				<li class="citys_name1">赤水</li>
-				<li class="citys_name1">六盘水</li>
-				<li class="citys_name1">毕节</li>
-			</div>
-			<h1 class="citys_title">河南</h1>
-			<div class="citys_names">
-				<li class="citys_name1">灵宝</li>
-				<li class="citys_name1">孟州</li>
-				<li class="citys_name1">开封</li>
-				<li class="citys_name1">卫辉</li>
-				<li class="citys_name1">汝州</li>
-				<li class="citys_name1">驻马店</li>
-				<li class="citys_name1">林州</li>
-				<li class="citys_name1">郑州</li>
-				<li class="citys_name1">洛阳</li>
-				<li class="citys_name1">邓州</li>
-				<li class="citys_name1">许昌</li>
-				<li class="citys_name1">焦作</li>
-				<li class="citys_name1">巩义</li>
-				<li class="citys_name1">登封</li>
-				<li class="citys_name1">禹州</li>
-			</div>
-		</ul>
+		<div class="citys_body">
+			<h1 class="citys_title_1">省份</h1>
+			<div class="citys_list">
 
+			</div>
+		</div>
 	</main>
+	<script src="jquery-3.3.1.min.js"></script>
+	<script>
+		$.getScript("http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js",function () {
+			var data=remote_ip_info;
+			var city=data.city;
+			getweather(city);
+        });
+		function getweather(city) {
+            $(".now_city .now_city_name").html(city);
+
+
+		$.ajax({
+			url:"http://api.jisuapi.com/weather/query?appkey=7becf00c41a637c7&city="+city,
+			dataType:"jsonp",
+			success:function (r) {
+			    console.log(r.result);
+				let data=r.result.aqi;
+				let str=data.quality;
+
+				let img=r.result.daily[0].day.img;
+                let img1=r.result.daily[1].day.img;
+
+                $(".today_img").html(`<img src="img/tianqitubiao/weathercn/${img}.png" alt="">`);
+                $(".mingtian_img").html(`<img src="img/tianqitubiao/weathercn/${img1}.png" alt="">`);
+
+                $(".now_air h1:last-child").html(str);
+				let nowtemp=r.result.temp;
+				$(".now_temp span").html(nowtemp);
+				let smtian=r.result.weather;
+				$(".smtian").html(smtian);
+				let winddirect=r.result.winddirect;
+				$(".now_wind").html(winddirect);
+				let windpower=r.result.windpower;
+				$(".now_wind_level").html(windpower);
+				let measure=r.result.aqi.aqiinfo.measure;
+				$("#now_to_user").html(measure);
+				let temphigh=r.result.temphigh;
+				$(".today_hight_tmp").html(temphigh);
+				let templow=r.result.templow;
+				$(".todaylow_tmp").html(templow);
+				$(".today_weather").html(smtian);
+				let mingtiantemphigh=r.result.daily[1].day.temphigh;
+				$(".mingtianhighttmp").html(mingtiantemphigh);
+				let mingtiantemplow=r.result.daily[1].night.templow;
+				$(".mingtianlowtmp").html(mingtiantemplow);
+				let mttianqi=r.result.daily[1].day.weather;
+				$(".mingtian_weather").html(mttianqi);
+
+
+
+
+
+
+				let hourstemp=r.result.hourly[0].temp;
+                let hourstemp1=r.result.hourly[1].temp;
+                let hourstemp2=r.result.hourly[2].temp;
+                let hourstemp3=r.result.hourly[3].temp;
+                let hourstemp4=r.result.hourly[4].temp;
+                let hourstemp5=r.result.hourly[5].temp;
+                let hourstemp6=r.result.hourly[6].temp;
+                let hourstemp7=r.result.hourly[7].temp;
+                let hoursimg=r.result.hourly[0].img;
+                let hoursimg1=r.result.hourly[1].img;
+                let hoursimg2=r.result.hourly[2].img;
+                let hoursimg3=r.result.hourly[3].img;
+                let hoursimg4=r.result.hourly[4].img;
+                let hoursimg5=r.result.hourly[5].img;
+                let hoursimg6=r.result.hourly[6].img;
+                let hoursimg7=r.result.hourly[7].img;
+
+                let hourstime=r.result.hourly[0].time;
+                let hourstime1=r.result.hourly[1].time;
+                let hourstime2=r.result.hourly[2].time;
+                let hourstime3=r.result.hourly[3].time;
+                let hourstime4=r.result.hourly[4].time;
+                let hourstime5=r.result.hourly[5].time;
+                let hourstime6=r.result.hourly[6].time;
+                let hourstime7=r.result.hourly[7].time;
+                $(".hours_time").eq(0).html(hourstime);
+                $(".hours_time").eq(1).html(hourstime1);
+                $(".hours_time").eq(2).html(hourstime2);
+                $(".hours_time").eq(3).html(hourstime3);
+                $(".hours_time").eq(4).html(hourstime4);
+                $(".hours_time").eq(5).html(hourstime5);
+                $(".hours_time").eq(6).html(hourstime6);
+                $(".hours_time").eq(7).html(hourstime7);
+                $(".hours_tmp span").eq(0).html(hourstemp);
+                $(".hours_tmp span").eq(1).html(hourstemp1);
+                $(".hours_tmp span").eq(2).html(hourstemp2);
+                $(".hours_tmp span").eq(3).html(hourstemp3);
+                $(".hours_tmp span").eq(4).html(hourstemp4);
+                $(".hours_tmp span").eq(5).html(hourstemp5);
+                $(".hours_tmp span").eq(6).html(hourstemp6);
+                $(".hours_tmp span").eq(7).html(hourstemp7);
+                $(".hours_img").eq(0).html(`<img src="img/tianqitubiao/weathercn/${hoursimg}.png" alt="">`);
+                $(".hours_img").eq(1).html(`<img src="img/tianqitubiao/weathercn/${hoursimg1}.png" alt="">`);
+                $(".hours_img").eq(2).html(`<img src="img/tianqitubiao/weathercn/${hoursimg2}.png" alt="">`);
+                $(".hours_img").eq(3).html(`<img src="img/tianqitubiao/weathercn/${hoursimg3}.png" alt="">`);
+                $(".hours_img").eq(4).html(`<img src="img/tianqitubiao/weathercn/${hoursimg4}.png" alt="">`);
+                $(".hours_img").eq(5).html(`<img src="img/tianqitubiao/weathercn/${hoursimg5}.png" alt="">`);
+                $(".hours_img").eq(6).html(`<img src="img/tianqitubiao/weathercn/${hoursimg6}.png" alt="">`);
+                $(".hours_img").eq(7).html(`<img src="img/tianqitubiao/weathercn/${hoursimg7}.png" alt="">`);
+				let dailydate=r.result.daily[0].date.slice(5,);
+                let dailydate1=r.result.daily[1].date.slice(5,);
+                let dailydate2=r.result.daily[2].date.slice(5,);
+                let dailydate3=r.result.daily[3].date.slice(5,);
+                let dailydate4=r.result.daily[4].date.slice(5,);
+                let dailydate5=r.result.daily[5].date.slice(5,);
+                let dailydate6=r.result.daily[6].date.slice(5,);
+                $(".date_every").eq(0).html(dailydate);
+                $(".date_every").eq(1).html(dailydate1);
+                $(".date_every").eq(2).html(dailydate2);
+                $(".date_every").eq(3).html(dailydate3);
+                $(".date_every").eq(4).html(dailydate4);
+                $(".date_every").eq(5).html(dailydate5);
+                $(".date_every").eq(6).html(dailydate6);
+
+                let dailywther=r.result.daily[0].day.weather;
+                let dailywther1=r.result.daily[1].day.weather;
+                let dailywther2=r.result.daily[2].day.weather;
+                let dailywther3=r.result.daily[3].day.weather;
+                let dailywther4=r.result.daily[4].day.weather;
+                let dailywther5=r.result.daily[5].day.weather;
+                let dailywther6=r.result.daily[6].day.weather;
+                $(".date_weather span").eq(0).html(dailywther);
+                $(".date_weather span").eq(1).html(dailywther1);
+                $(".date_weather span").eq(2).html(dailywther2);
+                $(".date_weather span").eq(3).html(dailywther3);
+                $(".date_weather span").eq(4).html(dailywther4);
+                $(".date_weather span").eq(5).html(dailywther5);
+                $(".date_weather span").eq(6).html(dailywther6);
+
+                let dailytemph=r.result.daily[0].day.temphigh;
+                let dailytemph1=r.result.daily[1].day.temphigh;
+                let dailytemph2=r.result.daily[2].day.temphigh;
+                let dailytemph3=r.result.daily[3].day.temphigh;
+                let dailytemph4=r.result.daily[4].day.temphigh;
+                let dailytemph5=r.result.daily[5].day.temphigh;
+                let dailytemph6=r.result.daily[6].day.temphigh;
+				$(".date_hightmp span").eq(0).html(dailytemph);
+                $(".date_hightmp span").eq(1).html(dailytemph1);
+                $(".date_hightmp span").eq(2).html(dailytemph2);
+                $(".date_hightmp span").eq(3).html(dailytemph3);
+                $(".date_hightmp span").eq(4).html(dailytemph4);
+                $(".date_hightmp span").eq(5).html(dailytemph5);
+                $(".date_hightmp span").eq(6).html(dailytemph6);
+
+
+                let dailytempl=r.result.daily[0].night.templow;
+                let dailytempl1=r.result.daily[1].night.templow;
+                let dailytempl2=r.result.daily[2].night.templow;
+                let dailytempl3=r.result.daily[3].night.templow;
+                let dailytempl4=r.result.daily[4].night.templow;
+                let dailytempl5=r.result.daily[5].night.templow;
+                let dailytempl6=r.result.daily[6].night.templow;
+                $(".date_lowtmp span").eq(0).html(dailytempl);
+                $(".date_lowtmp span").eq(1).html(dailytempl1);
+                $(".date_lowtmp span").eq(2).html(dailytempl2);
+                $(".date_lowtmp span").eq(3).html(dailytempl3);
+                $(".date_lowtmp span").eq(4).html(dailytempl4);
+                $(".date_lowtmp span").eq(5).html(dailytempl5);
+                $(".date_lowtmp span").eq(6).html(dailytempl6);
+                
+                let dailywindy=r.result.daily[0].day.winddirect;
+                let dailywindy1=r.result.daily[1].day.winddirect;
+                let dailywindy2=r.result.daily[2].day.winddirect;
+                let dailywindy3=r.result.daily[3].day.winddirect;
+                let dailywindy4=r.result.daily[4].day.winddirect;
+                let dailywindy5=r.result.daily[5].day.winddirect;
+                let dailywindy6=r.result.daily[6].day.winddirect;
+                $(".date_wind span").eq(0).html(dailywindy);
+                $(".date_wind span").eq(1).html(dailywindy1);
+                $(".date_wind span").eq(2).html(dailywindy2);
+                $(".date_wind span").eq(3).html(dailywindy3);
+                $(".date_wind span").eq(4).html(dailywindy4);
+                $(".date_wind span").eq(5).html(dailywindy5);
+                $(".date_wind span").eq(6).html(dailywindy6);
+                let dailywindyp=r.result.daily[0].day.windpower;
+                let dailywindyp1=r.result.daily[1].day.windpower;
+                let dailywindyp2=r.result.daily[2].day.windpower;
+                let dailywindyp3=r.result.daily[3].day.windpower;
+                let dailywindyp4=r.result.daily[4].day.windpower;
+                let dailywindyp5=r.result.daily[5].day.windpower;
+                let dailywindyp6=r.result.daily[6].day.windpower;
+                $(".date_wind_level span").eq(0).html(dailywindyp);
+                $(".date_wind_level span").eq(1).html(dailywindyp1);
+                $(".date_wind_level span").eq(2).html(dailywindyp2);
+                $(".date_wind_level span").eq(3).html(dailywindyp3);
+                $(".date_wind_level span").eq(4).html(dailywindyp4);
+                $(".date_wind_level span").eq(5).html(dailywindyp5);
+                $(".date_wind_level span").eq(6).html(dailywindyp6);
+                let dailyimg=r.result.daily[0].day.img;
+                let dailyimg1=r.result.daily[1].day.img;
+                let dailyimg2=r.result.daily[2].day.img;
+                let dailyimg3=r.result.daily[3].day.img;
+                let dailyimg4=r.result.daily[4].day.img;
+                let dailyimg5=r.result.daily[5].day.img;
+                let dailyimg6=r.result.daily[6].day.img;
+				$(".date_img").eq(0).html(`<img src="img/tianqitubiao/weathercn/${dailyimg}.png" alt="">`)
+                $(".date_img").eq(1).html(`<img src="img/tianqitubiao/weathercn/${dailyimg1}.png" alt="">`)
+                $(".date_img").eq(2).html(`<img src="img/tianqitubiao/weathercn/${dailyimg2}.png" alt="">`)
+                $(".date_img").eq(3).html(`<img src="img/tianqitubiao/weathercn/${dailyimg3}.png" alt="">`)
+                $(".date_img").eq(4).html(`<img src="img/tianqitubiao/weathercn/${dailyimg4}.png" alt="">`)
+                $(".date_img").eq(5).html(`<img src="img/tianqitubiao/weathercn/${dailyimg5}.png" alt="">`)
+                $(".date_img").eq(6).html(`<img src="img/tianqitubiao/weathercn/${dailyimg6}.png" alt="">`)
+
+
+
+
+
+            }
+		})
+        }
+		$(".now_city_name").click(function () {
+			$("#citys").show();
+			let data=[];
+			let sheng=[];
+			let city=[];
+			$.ajax({
+				url: "http://api.jisuapi.com/weather/city?appkey=7becf00c41a637c7",
+				dataType:"jsonp",
+				success:function (r) {
+				    console.log(r);
+					data=r.result;
+					sheng=$.grep(data,function (val,index) {
+						if (val.parentid==="0"){
+							return true;
+						}
+                    });
+					let str="";
+					$.each(sheng,function (index,val) {
+						str+=`<div class="citys_name" id="${val.cityid}">${val.city}</div>`;
+                    });
+					$(".citys_list").html(str);
+                }
+			});
+
+			$("#citys").on("click",".citys_name",function () {
+				let id=$(this).attr("id");
+				city=$.grep(data,function (val,index) {
+					if(val.parentid===id){
+					    return true;
+					}
+                });
+				$(".citys_list").empty();
+				let str="";
+				$.each(city,function (index,val) {
+					str+=`<div class="citys_name2">${val.city}</div>`
+                });
+				$(".citys_list").html(str);
+
+            });
+            $("#citys").on("click",".citys_name2",function () {
+                $("#citys").hide();
+                getweather($(this).html())
+            })
+            $(".bth").click(function () {
+                $("#citys").slideUp(100);
+            });
+        });
+
+	</script>
+
 </body>
 </html>
